@@ -39,7 +39,7 @@ if (form && formNote) {
       return;
     }
 
-    const steps = document.querySelector('.form-steps');
+    const steps = document.querySelector('.next-steps');
     if (steps) steps.hidden = true;
     form.hidden = true;
     formNote.hidden = false;

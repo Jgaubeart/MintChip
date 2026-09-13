@@ -247,47 +247,58 @@
       </div>
     </section>
 
-    <section id="contact" class="section contact shell">
-      <div class="cta-card reveal">
-        <div class="section-kicker">READY FOR SOMETHING FRESH?</div>
-        <h2>See what your website <span>could look like.</span></h2>
-
-        <form class="lead-form" id="lead-form">
-          <div class="field">
-            <label for="name">Your name</label>
-            <input id="name" name="name" type="text" required autocomplete="name" placeholder="Jane Smith">
-          </div>
-          <div class="field">
-            <label for="email">Email address</label>
-            <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
-          </div>
-          <div class="field field-wide">
-            <label for="website">Current website <span>(optional)</span></label>
-            <input id="website" name="website" type="url" autocomplete="url" placeholder="yourbusiness.com">
-          </div>
-          <button class="btn btn-mint" type="submit">Freshen up my site <span>↗</span></button>
-        </form>
-
-        <div class="form-note" id="form-note" role="status" hidden>Thanks — here’s what happens next: we review your business and current site, then follow up with clear next steps. No spam, no runaround.</div>
-
-        <div class="form-steps">
-          <span><b>1</b> Share your business & current site</span>
-          <span><b>2</b> We review it</span>
-          <span><b>3</b> We follow up with next steps</span>
+    <section id="contact" class="section contact">
+      <div class="shell cta-grid">
+        <div class="cta-copy reveal">
+          <div class="section-kicker">READY FOR SOMETHING FRESH?</div>
+          <h2>See what your website<br>could look like.</h2>
+          <p>Send us your current site. We’ll show you where we’d take it.</p>
         </div>
 
-        <small>No spam. No weird sales funnel. Just a better website.</small>
+        <div class="cta-form-col reveal delay-1">
+          <form class="lead-form" id="lead-form">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required autocomplete="name" placeholder="Jane Smith">
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
+            </div>
+            <div class="field field-wide">
+              <label for="website">Current website <span>(optional)</span></label>
+              <input id="website" name="website" type="url" autocomplete="url" placeholder="yourbusiness.com">
+            </div>
+            <button class="btn btn-dark" type="submit">Freshen up my site <span>↗</span></button>
+          </form>
+
+          <div class="form-note" id="form-note" role="status" hidden>Thanks — here’s what happens next: we review your business and current site, then follow up with clear next steps. No spam, no runaround.</div>
+
+          <ol class="next-steps">
+            <li><b>01</b><span>Share your business</span></li>
+            <li><b>02</b><span>We review it</span></li>
+            <li><b>03</b><span>We follow up</span></li>
+          </ol>
+        </div>
       </div>
+      <img class="cta-scoop" src="assets/mint-chip-scoop.png" alt="">
     </section>
   </main>
 
-  <footer class="footer shell">
-    <div class="footer-brand">
-      <span><b class="mint">MINT</b><b class="cream">CHIP</b></span>
-      <p>Fresh websites for local businesses.</p>
+  <footer class="footer">
+    <div class="shell footer-grid">
+      <div class="footer-brand">
+        <img class="footer-logo" src="assets/mint-chip-wordmark.png" alt="Mint Chip">
+        <p>Fresh websites for local businesses.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#work">Work</a>
+        <a href="#how">How it works</a>
+        <a href="#why">Why Mint Chip</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-meta">© 2026 Mint Chip. All rights reserved.</div>
     </div>
-    <img src="assets/mint-chip-scoop.png" alt="Mint Chip scoop mark">
-    <div class="footer-meta">© 2026 Mint Chip. All rights reserved.</div>
   </footer>
 
   <script src="script.js"></script>
