@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Mint Chip — Fresh Websites for Local Businesses</title>
   <meta name="description" content="Mint Chip builds bold, modern websites for local businesses. Fast, clean, conversion-focused, and made to stand out." />
-  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="theme-color" content="#080908" />
   <link rel="icon" href="assets/mint-chip-mark.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('js');</script>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="noise"></div>
-  <div class="cursor-glow"></div>
 
   <header class="nav shell">
     <a class="brand" href="#top" aria-label="Mint Chip home">
@@ -52,7 +52,7 @@
 
       <div class="hero-stage reveal delay-1">
         <div class="floating-chip">
-          <img src="assets/mint-chip-mark.png" alt="Mint Chip ice cream mark">
+          <img src="assets/mint-chip-mark.png" alt="Mint Chip scoop mark">
         </div>
 
         <div class="browser-card card-main">
@@ -64,13 +64,13 @@
             <div class="mini-nav">
               <strong>BRIGHTLINE</strong>
               <span>Services &nbsp; Work &nbsp; Reviews</span>
-              <button>GET A QUOTE</button>
+              <span class="mock-btn">GET A QUOTE</span>
             </div>
             <div class="mini-hero">
               <span>BUILT LOCAL. BUILT BETTER.</span>
               <h3>Work that speaks<br>for itself.</h3>
               <p>Premium service, zero runaround.</p>
-              <button>START YOUR PROJECT →</button>
+              <span class="mock-btn">START YOUR PROJECT →</span>
             </div>
           </div>
         </div>
@@ -78,22 +78,22 @@
         <div class="browser-card card-back">
           <div class="browser-top">
             <div class="dots"><b></b><b></b><b></b></div>
-            <div class="address">yourbusiness.com</div>
+            <div class="address">brightlinehome.com</div>
           </div>
           <div class="old-site">
-            <div class="old-nav">YOUR BUSINESS <span>HOME &nbsp; ABOUT &nbsp; CONTACT</span></div>
-            <h4>Welcome To Our Website</h4>
-            <p>We have proudly served the area since 1998. Call us today to learn more.</p>
-            <button>Learn More</button>
+            <div class="old-nav">BRIGHTLINE HOME <span>HOME &nbsp; ABOUT &nbsp; CONTACT</span></div>
+            <h4>Welcome to Brightline Home</h4>
+            <p>Serving Southwest Florida since 2002. Call today to learn more.</p>
+            <span class="mock-btn">Learn More</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="ticker-wrap">
+    <section class="ticker-wrap" aria-hidden="true">
       <div class="ticker">
         <span>ROOFERS ✦ RESTAURANTS ✦ CONTRACTORS ✦ SALONS ✦ DENTISTS ✦ HVAC ✦ LANDSCAPERS ✦ MED SPAS ✦ LOCAL SHOPS ✦</span>
-        <span aria-hidden="true">ROOFERS ✦ RESTAURANTS ✦ CONTRACTORS ✦ SALONS ✦ DENTISTS ✦ HVAC ✦ LANDSCAPERS ✦ MED SPAS ✦ LOCAL SHOPS ✦</span>
+        <span>ROOFERS ✦ RESTAURANTS ✦ CONTRACTORS ✦ SALONS ✦ DENTISTS ✦ HVAC ✦ LANDSCAPERS ✦ MED SPAS ✦ LOCAL SHOPS ✦</span>
       </div>
     </section>
 
@@ -105,113 +105,152 @@
       </div>
 
       <div class="showcase reveal">
+        <p class="concept-note">Concept examples, not real clients — same idea, three different businesses.</p>
         <div class="showcase-tabs" role="tablist" aria-label="Website examples">
-          <button class="tab active" data-target="trade">Contractor</button>
-          <button class="tab" data-target="med">Med Spa</button>
-          <button class="tab" data-target="food">Restaurant</button>
+          <button class="tab active" data-target="trade" type="button">Contractor</button>
+          <button class="tab" data-target="med" type="button">Med Spa</button>
+          <button class="tab" data-target="food" type="button">Restaurant</button>
         </div>
 
-        <div class="showcase-panel active" id="trade">
+        <div class="showcase-panel active" id="trade" role="tabpanel">
           <div class="compare-card before">
             <div class="label">BEFORE</div>
             <div class="fake-window old">
-              <div class="fake-nav"><b>COASTAL AIR</b><span>HOME ABOUT SERVICES CONTACT</span></div>
+              <div class="fake-nav"><b>COASTAL AIR</b><span>HOME &nbsp; SERVICES &nbsp; CONTACT</span></div>
               <div class="fake-copy">
+                <div class="photo photo-before"><span>HEATING & COOLING</span></div>
                 <small>Serving SWFL since 2002</small>
                 <h3>Heating & Cooling Services</h3>
-                <p>Quality service at fair prices. Call today for an estimate.</p>
-                <button>LEARN MORE</button>
+                <p>Residential and light commercial HVAC. Call today for an estimate.</p>
+                <span class="mock-btn">CONTACT US</span>
               </div>
             </div>
           </div>
           <div class="compare-card after">
             <div class="label mint-label">AFTER MINT CHIP</div>
             <div class="fake-window fresh">
-              <div class="fake-nav"><b>COASTAL AIR</b><span>Cooling &nbsp; Heating &nbsp; Reviews</span><button>BOOK SERVICE</button></div>
+              <div class="fake-nav"><b>COASTAL AIR</b><span>Services &nbsp; Reviews &nbsp; Service Area</span><span class="mock-btn">BOOK SERVICE</span></div>
               <div class="fresh-copy">
                 <small>FAST. LOCAL. RELIABLE.</small>
                 <h3>Comfort without<br>the runaround.</h3>
-                <p>Same-day HVAC service from a local team that shows up.</p>
-                <button>GET COMFORT BACK →</button>
+                <p>Same-day HVAC service from a licensed, local team that shows up when they say they will.</p>
+                <div class="photo photo-trade"><span>LOCAL HVAC</span></div>
+                <div class="trust-chips"><span>5.0 rating</span><span>Licensed & insured</span><span>Same-day service</span></div>
+                <div class="actions">
+                  <span class="mock-btn">GET COMFORT BACK →</span>
+                  <span class="mock-link">See our work ↗</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="showcase-panel" id="med">
+        <div class="showcase-panel" id="med" role="tabpanel">
           <div class="compare-card before">
             <div class="label">BEFORE</div>
             <div class="fake-window old">
-              <div class="fake-nav"><b>GLOW AESTHETICS</b><span>HOME SERVICES CONTACT</span></div>
-              <div class="fake-copy"><small>WELCOME</small><h3>Feel Your Best</h3><p>We offer advanced aesthetic treatments in a comfortable environment.</p><button>CONTACT</button></div>
+              <div class="fake-nav"><b>GLOW AESTHETICS</b><span>HOME &nbsp; SERVICES &nbsp; CONTACT</span></div>
+              <div class="fake-copy">
+                <div class="photo photo-before"><span>AESTHETICS</span></div>
+                <small>WELCOME</small>
+                <h3>Feel Your Best</h3>
+                <p>Advanced aesthetic treatments in a comfortable, welcoming environment.</p>
+                <span class="mock-btn">CONTACT US</span>
+              </div>
             </div>
           </div>
           <div class="compare-card after">
             <div class="label mint-label">AFTER MINT CHIP</div>
             <div class="fake-window fresh spa">
-              <div class="fake-nav"><b>GLOW</b><span>Injectables &nbsp; Skin &nbsp; Memberships</span><button>BOOK</button></div>
-              <div class="fresh-copy"><small>REFINED, NEVER OVERDONE</small><h3>Subtle results.<br>Serious confidence.</h3><p>Modern aesthetics, personalized around you.</p><button>BOOK A CONSULT →</button></div>
+              <div class="fake-nav"><b>GLOW</b><span>Injectables &nbsp; Skin &nbsp; Memberships</span><span class="mock-btn">BOOK</span></div>
+              <div class="fresh-copy centered">
+                <small>REFINED, NEVER OVERDONE</small>
+                <h3>Subtle results.<br>Serious confidence.</h3>
+                <p>Modern, personalized aesthetics from a team that treats your goals like their own.</p>
+                <div class="photo photo-spa"><span>SKIN · INJECTABLES · MEMBERSHIPS</span></div>
+                <div class="trust-chips"><span>Board-certified team</span><span>Private suites</span><span>Real results</span></div>
+                <div class="actions"><span class="mock-btn">BOOK A CONSULT →</span></div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="showcase-panel" id="food">
+        <div class="showcase-panel" id="food" role="tabpanel">
           <div class="compare-card before">
             <div class="label">BEFORE</div>
             <div class="fake-window old">
-              <div class="fake-nav"><b>MARINA GRILL</b><span>HOME MENU CONTACT</span></div>
-              <div class="fake-copy"><small>FAMILY OWNED</small><h3>Fresh Seafood & More</h3><p>Stop by for lunch or dinner. We have something for everyone.</p><button>MENU</button></div>
+              <div class="fake-nav"><b>MARINA GRILL</b><span>HOME &nbsp; MENU &nbsp; CONTACT</span></div>
+              <div class="fake-copy">
+                <div class="photo photo-before"><span>SEAFOOD</span></div>
+                <small>FAMILY OWNED</small>
+                <h3>Fresh Seafood & More</h3>
+                <p>Stop by for lunch or dinner. We have something for everyone.</p>
+                <span class="mock-btn">VIEW MENU</span>
+              </div>
             </div>
           </div>
           <div class="compare-card after">
             <div class="label mint-label">AFTER MINT CHIP</div>
             <div class="fake-window fresh food">
-              <div class="fake-nav"><b>MARINA</b><span>Menu &nbsp; Story &nbsp; Events</span><button>RESERVE</button></div>
-              <div class="fresh-copy"><small>SEA TO TABLE</small><h3>Sunset tastes<br>better here.</h3><p>Fresh Gulf seafood, cold drinks, zero rush.</p><button>SEE THE MENU →</button></div>
+              <div class="fake-nav"><b>MARINA</b><span>Menu &nbsp; Story &nbsp; Events</span><span class="mock-btn">RESERVE</span></div>
+              <div class="fresh-copy">
+                <div class="photo photo-food"><span>SEA TO TABLE</span></div>
+                <small>SEA TO TABLE</small>
+                <h3>Sunset tastes<br>better here.</h3>
+                <p>Fresh Gulf seafood, cold drinks, and a waterfront patio built for slowing down.</p>
+                <div class="trust-chips"><span>Fresh Gulf seafood</span><span>Waterfront patio</span><span>Walk-ins welcome</span></div>
+                <div class="actions"><span class="mock-btn">SEE THE MENU →</span></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="how" class="section how shell">
-      <div class="section-kicker reveal">NO AGENCY NONSENSE</div>
-      <div class="section-head reveal">
-        <h2>Here’s how simple <span>this is.</span></h2>
-      </div>
+    <section id="how" class="section how">
+      <div class="shell">
+        <div class="section-kicker reveal">NO AGENCY NONSENSE</div>
+        <div class="section-head reveal">
+          <h2>Here’s how simple <span>this is.</span></h2>
+        </div>
 
-      <div class="steps">
-        <article class="step reveal">
-          <span>01</span><h3>We spot the opportunity.</h3>
-          <p>We look at your current website, your business, your competition, and where the experience is falling flat.</p>
-        </article>
-        <article class="step reveal delay-1">
-          <span>02</span><h3>We make it better.</h3>
-          <p>We build a fresh direction around what your customers actually need to see, feel, and do.</p>
-        </article>
-        <article class="step reveal delay-2">
-          <span>03</span><h3>You see it first.</h3>
-          <p>No mystery. No twelve-week design process. You get something tangible to react to before you commit.</p>
-        </article>
-        <article class="step reveal delay-3">
-          <span>04</span><h3>We launch it.</h3>
-          <p>Approve it, tweak it, launch it. We handle the technical stuff so you can get back to running your business.</p>
-        </article>
+        <div class="steps">
+          <article class="step reveal">
+            <span>01</span><h3>We spot the opportunity.</h3>
+            <p>We look at your current website, your business, your competition, and where the experience is falling flat.</p>
+          </article>
+          <article class="step reveal delay-1">
+            <span>02</span><h3>We make it better.</h3>
+            <p>We build a fresh direction around what your customers actually need to see, feel, and do.</p>
+          </article>
+          <article class="step reveal delay-2">
+            <span>03</span><h3>You see it first.</h3>
+            <p>No mystery. No twelve-week design process. You get something tangible to react to before you commit.</p>
+          </article>
+          <article class="step reveal delay-3">
+            <span>04</span><h3>We launch it.</h3>
+            <p>Approve it, tweak it, launch it. We handle the technical stuff so you can get back to running your business.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="why" class="section why shell">
-      <div class="why-card reveal">
-        <div class="mark-panel">
-          <img src="assets/mint-chip-mark.png" alt="Mint Chip alt logo">
-          <span>THE ALT MARK</span>
-        </div>
-        <div class="why-copy">
-          <div class="section-kicker">WHY MINT CHIP?</div>
-          <h2>The internet has enough <span>boring websites.</span></h2>
-          <p>Your business has personality. Your website should have some too. We mix sharp design, smart technology, and practical sales thinking into sites that feel modern without feeling corporate.</p>
-          <div class="pill-row">
-            <span>Fresh design</span><span>Built for local</span><span>Mobile first</span><span>Conversion focused</span><span>Fast launches</span>
+    <section id="why" class="section why">
+      <div class="shell">
+        <div class="why-card reveal">
+          <div class="mark-panel">
+            <div class="stamp" aria-hidden="true">
+              <img src="assets/mint-chip-mark.png" alt="">
+              <span>MADE FRESH</span>
+            </div>
+          </div>
+          <div class="why-copy">
+            <div class="section-kicker">WHY MINT CHIP?</div>
+            <h2>The internet has enough <span>boring websites.</span></h2>
+            <p>Your business has personality. Your website should have some too. We mix sharp design, smart technology, and practical sales thinking into sites that feel modern without feeling corporate.</p>
+            <div class="pill-row">
+              <span>Fresh design</span><span>Built for local</span><span>Mobile first</span><span>Conversion focused</span><span>Fast launches</span>
+            </div>
           </div>
         </div>
       </div>
@@ -224,12 +263,31 @@
         <div class="section-kicker">READY FOR SOMETHING FRESH?</div>
         <h2>See what your website <span>could look like.</span></h2>
         <p>Send us your current site. We’ll show you where we’d take it.</p>
-        <form class="lead-form" onsubmit="event.preventDefault(); alert('Thanks! Connect this form to your preferred inbox or CRM when you are ready.');">
-          <input required placeholder="Your name" aria-label="Your name">
-          <input required type="email" placeholder="Email address" aria-label="Email address">
-          <input placeholder="Current website (if you have one)" aria-label="Current website">
+
+        <form class="lead-form" id="lead-form">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" required autocomplete="name" placeholder="Jane Smith">
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
+          </div>
+          <div class="field field-wide">
+            <label for="website">Current website <span>(optional)</span></label>
+            <input id="website" name="website" type="url" autocomplete="url" placeholder="yourbusiness.com">
+          </div>
           <button class="btn btn-mint" type="submit">Freshen up my site <span>↗</span></button>
         </form>
+
+        <div class="form-note" id="form-note" role="status" hidden>Thanks — here’s what happens next: we review your business and current site, then follow up with clear next steps. No spam, no runaround.</div>
+
+        <div class="form-steps">
+          <span><b>1</b> Share your business & current site</span>
+          <span><b>2</b> We review it</span>
+          <span><b>3</b> We follow up with next steps</span>
+        </div>
+
         <small>No spam. No weird sales funnel. Just a better website.</small>
       </div>
     </section>
@@ -240,7 +298,7 @@
       <span><b class="mint">MINT</b><b class="cream">CHIP</b></span>
       <p>Fresh websites for local businesses.</p>
     </div>
-    <img src="assets/mint-chip-mark.png" alt="Mint Chip logo mark">
+    <img src="assets/mint-chip-mark.png" alt="Mint Chip scoop mark">
     <div class="footer-meta">© 2026 Mint Chip. All rights reserved.</div>
   </footer>
 
