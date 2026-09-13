@@ -9,6 +9,15 @@ const io = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
 
+const nav = document.querySelector('.nav');
+if (nav) {
+  const updateNav = () => {
+    nav.classList.toggle('scrolled', window.scrollY > 24);
+  };
+  updateNav();
+  window.addEventListener('scroll', updateNav, { passive: true });
+}
+
 document.querySelectorAll('.tab').forEach((btn) => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.tab').forEach((b) => b.classList.remove('active'));
